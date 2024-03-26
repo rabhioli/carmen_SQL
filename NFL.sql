@@ -16,3 +16,5 @@ create table players(
 	salary integer,
 	team_id integer references teams
 );
+-- List the names of all NFL teams
+SELECT name FROM teams;
