@@ -26,3 +26,6 @@ FROM teams;
 SELECT head_coach 
 FROM teams 
 WHERE conference = 'AFC' AND division = 'South'
+-- The total number of players in the NFL
+SELECT COUNT(*) 
+FROM players;
