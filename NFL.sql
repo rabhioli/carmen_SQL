@@ -29,3 +29,16 @@ WHERE conference = 'AFC' AND division = 'South'
 -- The total number of players in the NFL
 SELECT COUNT(*) 
 FROM players;
+
+-- The team names and head coaches of the NFC North and AFC East
+SELECT head_coach, name
+FROM teams
+WHERE (conference = 'NFC' OR conference = 'AFC')
+    AND (division = 'South' OR division = 'North')
+
+
+-- The 50 players with the highest salaries
+SELECT salary
+FROM players
+ORDER BY salary DESC
+LIMIT 50;
